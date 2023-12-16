@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/_reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>e-Ticket</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/PNG/Logo e-ticket.png" alt="">
+    </header>
+    <main class="container">
+
+        <div class="graphics"></div>
+        <h1>Buy your <span>ticket</span></h1>
+        <form action="">
+            <label class="input-group">
+                Choose type
+                <select name="ticket-type" id="ticket-type">
+                    <option value="lower">Lower seat</option>
+                    <option value="upper">Upper seat</option>
+                    <option value="floor">Floor</option>
+                </select>
+            </label>
+            <label class="input-group">Qtty.
+                <input type="number" id="qtty" placeholder="00" min="1" max="10">
+            </label>
+            <button onclick="buy()" type="button">Buy</button>
+        </form>
+        <img class="hachuras" src="./assets/SVG/Hachuras.svg" alt="">
+        <section>
+            <h2>Available quantity</h2>
+
+            <ul class="list">
+                <li>Floor<span id="qtty-floor">100</span></li>
+                <li>Upper seat<span id="qtty-upper">200</span></li>
+                <li>Lower seat<span id="qtty-lower">400</span></li>
+                
+            </ul>
+            <img src="./assets/Ticket.svg" alt="">
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
